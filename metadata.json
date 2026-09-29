@@ -1,0 +1,7 @@
+{
+  "name": "NeuroImmune CT Prep & Interactive Simulator",
+  "description": "Comprehensive interactive Android study guide and biological process simulator covering Motor Neurons, BCI, ANN vs BNN, Innate & Adaptive Immunity, NK Cells, and mRNA Vaccines for Class Test preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
