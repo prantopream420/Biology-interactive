@@ -6,3 +6,11 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Android build outputs and secrets
+android/build/
+android/*.apk
+android/*.apk.idsig
+android/*.keystore
+android/**/__pycache__/
+

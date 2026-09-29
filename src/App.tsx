@@ -21,7 +21,12 @@ interface NavState {
 }
 
 export default function App() {
-  const [isPhoneFrame, setIsPhoneFrame] = useState<boolean>(true);
+  const [isPhoneFrame, setIsPhoneFrame] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth > 640;
+    }
+    return false;
+  });
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [selectedTopic, setSelectedTopic] = useState<CTTopic | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
